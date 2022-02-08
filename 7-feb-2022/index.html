@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form>
+
+ Name:<input type="text" name="name" pattern="[a-zA-Z]{1,}" required size="20" title="Must contain at  uppercase and lower latter><br/><br>
+
+ Last Name:<input type="text" name="name" pattern="[a-zA-Z]{1,}" size="20" required><br/><br>
+  Password:<input type="password"  name="pwd"
+  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+  title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"placeholder="Password"size="20"><br><br>
+  Mobile No:<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" size="20" placeholder="9867******" ><br><br>
+
+ Email: <input type="email" id="email" name="email" placeholder="example1@*8"
+  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" size="20" required><br><br>
+  Course:<select>  
+<option value="Course">Course</option>  
+<option value="BCA">BCA</option>  
+<option value="BBA">BBA</option>  
+<option value="B.Tech">B.Tech</option>  
+<option value="MBA">MBA</option>  
+<option value="MCA">MCA</option>  
+<option value="M.Tech">M.Tech</option>  
+</select>  
+<br>  
+<br>  
+Gender: <br><input type="radio" name="male"/> Male <br>  
+<input type="radio" name="female"/> Female <br>  
+<input type="radio" name="other"/> Other  
+<br>  
+Address:  
+<br>  
+<textarea cols="50" rows="5" value="address">  
+</textarea>  
+<br> <br>  
+<input type="submit" value="Submit now" />
+<input type="reset" value="Reset" />
+
+
+		
+	</form>
+
+
+
+
+
+</body>
+</html>           
