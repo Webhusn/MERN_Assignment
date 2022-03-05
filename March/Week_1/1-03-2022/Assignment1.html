@@ -1,0 +1,44 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title></title>
+ 	<style type="text/css">
+ 		.container{
+ 			margin: 130px auto;
+ 			width: 40%;
+ 			height: 40%;
+ 			padding: 30px;
+ 			background-color: black;
+
+ 		}
+ 		label{color: white;}
+
+ 	</style>
+ </head>
+ <body>
+ 	<center><h2 class="mt-4">Adding two numbers using javascript</h2></center>
+ 	<div class="container center">
+ 		<label>Number1:</label>
+ 		<input type="number" name="number1"  id="num1" class="form-control"><br><br>
+ 		<label>Number2:</label>
+ 		<input type="number" name="number2"  id="num2" class="form-control">
+ 		<br><br>
+ 		<p id="add" style="color: white" class="mt-2">
+ 			
+ 		
+
+ 	<button style="background-color:red; float:right;" onclick="add()">Add</button>
+
+ 	</div>
+ 	<script type="text/javascript">
+ 		function add() {
+ 			var n1=parseInt(document.getElementById('num1').value);
+ 			var n2=parseInt(document.getElementById('num2').value);
+ 			var sum =n1+n2;
+ 			document.getElementById('add').innerHTML="sum is"+sum;
+ 			// body...
+ 		}
+ 	</script>
+ 
+ </body>
+ </html>
